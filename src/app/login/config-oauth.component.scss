@@ -1,0 +1,46 @@
+.configure_descriptions{
+    text-align: left;
+    padding: 0 5%;
+    color: #555555;
+}
+.configure_descriptions h2{
+    color: #173b6b;
+}
+.youtube_videos, .gmail_videos{
+    cursor: pointer;
+    padding: 15px 25px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 20px;
+    text-align: left;
+    transition: 300ms;
+}
+.youtube_videos{
+    border: solid 2px #c4302b;
+    color: #c4302b;
+    color: #8b8b8b;
+}
+.youtube_videos i{color: #c4302b !important;}
+.youtube_videos:hover{
+    background-color: #c4302b;
+    color: #ffffff;
+}
+.youtube_videos:hover i{color: #ffffff !important;}
+
+.gmail_videos{
+    border: solid 2px #d44638;
+    color: #8b8b8b;
+}
+.gmail_videos i{color: #d44638 !important;}
+.gmail_videos:hover{
+    background-color: #d44638;
+    color: #ffffff;
+}
+.gmail_videos:hover i{color: #ffffff !important;}
+
+.youtube_videos i, .gmail_videos i{
+    margin-right: 10px;
+    font-size: 24px;
+}

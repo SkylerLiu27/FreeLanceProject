@@ -1,0 +1,17 @@
+<div class="secondary-header">
+    <div class="row">
+      <div class="col-sm-8">
+          <ul class="breadcrumb">
+              <li><a href="#">Home</a><i id = "breadArrow" class="fas fa-angle-right"></i></li>
+            <li>Videos of {{videoCategory}} </li>
+          </ul>
+      </div>
+    </div>
+</div>
+<div class="page_content video_slider">
+  <ng-template ngFor let-v [ngForOf]='videosToShow'>
+    <app-videocard [v]='v'>
+    </app-videocard>
+  </ng-template>
+
+</div>

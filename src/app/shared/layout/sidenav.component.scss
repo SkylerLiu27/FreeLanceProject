@@ -1,0 +1,214 @@
+.sidenav {
+    /* border: 2px red solid; */
+    background-color: #173b6b;
+}
+.homeTitle {
+    font-family: "century-gothic-regular";
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    padding: 20px 10px 20px 15px;
+    font-weight: bold;
+    color: #87aab9;
+    background-color: #122f56;
+    border-bottom: solid 2px #173b6b;
+}
+
+.homeTitle i{
+    font-size: 25px;
+    float: left;
+    margin-right: 10px;
+}
+.subTitle {
+    float: left;
+    width: 100%;
+    height: 55px;
+    padding: 10px 10px 8px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #122f56;
+    border-bottom: solid 2px #173b6b;
+}
+
+.libraryContents button {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #1b3a6d;
+    border: none;
+    padding-left: 20px;
+}
+
+.libraryContents button:hover {
+    background: #122f56;
+
+}
+
+.libraryContents button:focus {
+    outline: none;
+}
+.libraryContents label{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-left: 20px;
+    float: left;
+    color: white;
+}
+.libraryContents span {
+    color: white;
+}
+.counts {
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(135, 170, 185);
+
+}
+.libraryContents i {
+    font-size: 20px;
+    float: left;
+    margin-top: 5px;
+    color: white;
+}
+
+.tagContents button {
+    float:left;
+    width: 100%;
+    height: 55px;
+    background-color: #1b3a6d;
+    border: none;
+    padding-left: 20px;
+}
+
+.tagContents button:hover {
+    background: #122f56;
+
+}
+
+.tagContents button:focus {
+    outline: none;
+
+}
+
+.tagContents label {
+    float:left;
+    /* border: 2px red solid; */
+    text-align: left;
+    width: 170px;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 5px;
+    color: white;
+}
+.tagContents span {
+
+    /* border: 2px yellow solid; */
+    width: 30px;
+    color: white;
+}
+
+
+.left_menu {
+    list-style: none;
+    padding: 0px;
+    float: left;
+    width: 100%; 
+  }
+  .left_menu li {
+    float: left;
+    color: #ffffff;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    background-color: #122f56;
+    vertical-align: middle;
+  }
+  .left_menu li p {
+    padding: 10px 15px;
+    margin: 0px;
+  }
+  .left_menu li .li_arrow {
+    cursor: pointer;
+    float: right;
+    color: #ffffff;
+  }
+  .left_menu li input[type="checkbox"]{
+      display: none;
+  }
+  /*#admin:checked + .sub_admin, #library:checked + .sub_library, #tags:checked + .sub_tags{display: block;}*/
+  .left_menu ul {
+    float: left;
+    width: 100%;
+    display: block;
+    list-style: none;
+    padding: 10px 0;
+    background-color: #173b6b;
+  }
+  .left_menu ul li {
+    cursor: pointer;
+    padding: 10px 10px 10px 30px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    background-color: #173b6b;
+    transition: 500ms all;
+    font-size: 16px;
+  }
+  .left_menu ul li i {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  .left_menu ul li span {
+    float: right;
+    width: 15%;
+    text-align: center;
+    font-size: 14px;
+    background-color: #2d517b;
+    border-radius: 3px;
+    padding: 2px 0;
+    margin: 0px;
+  }
+  .left_menu ul li:hover {
+    background-color: #122f56;
+  }
+  
+  .menu_tags li {
+    float: left;
+    font-size: 14px !important;
+    padding: 10px 10px 10px 30px !important;
+    vertical-align: top;
+    border-bottom: solid 1px #122f56;
+  }
+  .menu_tags li p {
+    float: left;
+    width: 80%;
+    padding: 0px;
+  }
+
+
+  /* ----- Footer Styles Start ----- */
+.footer {
+    float: left;
+    width: 100%;
+    padding: 20px 25px;
+  }
+  .footer img {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .footer p {
+    color: #87aab9;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  /* ----- Footer Styles End ----- */

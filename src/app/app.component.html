@@ -1,0 +1,14 @@
+<ng-progress [color]="'#2ca2d2'" [thick]="true"></ng-progress>
+<main>
+    <div>
+        <app-header *ngIf="this.authService?.isLoggedIn() || this.authService?.isGuest()"></app-header>
+        <div class="main_content">
+            <div class="sidebar" #navRef [ngClass]="{'lmw': isOpen, 'lmw_after': !isOpen}">
+                <app-sidenav *ngIf="this.authService?.isLoggedIn() || this.authService?.isGuest()"></app-sidenav>
+            </div>
+            <div class="page_content_wrapper" [ngClass]="{'pcw': isOpen, 'pcw_after': !isOpen}">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</main>

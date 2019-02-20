@@ -1,0 +1,662 @@
+[{
+    "title": "Venom",
+    "overview": "When Eddie Brock acquires the powers of a symbiote, he will have to release his alter-ego \"Venom\" to save his life.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+    "originalLanguage": "en",
+    "popularity": 404.784,
+    "releaseDate": "3 October, 2018",
+    "runTime": 0,
+    "averageVote": 6.6,
+    "externalId": 335983,
+    "genres": [{
+      "name": "Science Fiction",
+      "id": 13
+    }],
+    "keywords": null,
+    "trailers": null,
+    "id": 335983
+  },
+  {
+    "title": "Halloween",
+    "overview": "Laurie Strode comes to her final confrontation with Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//bXs0zkv2iGVViZEy78teg2ycDBm.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//tZ358Wk4BnOc4FjdGsiexAUvCMH.jpg",
+    "originalLanguage": "en",
+    "popularity": 297.383,
+    "releaseDate": "18 October, 2018",
+    "runTime": 0,
+    "averageVote": 6.7,
+    "externalId": 424139,
+    "genres": [{
+        "name": "Horror",
+        "id": 5
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 424139
+  },
+  {
+    "title": "A Star Is Born",
+    "overview": "Seasoned musician Jackson Maine discovers—and falls in love with—struggling artist Ally. She has just about given up on her dream to make it big as a singer—until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//840rbblaLc4SVxm8gF3DNdJ0YAE.jpg",
+    "originalLanguage": "en",
+    "popularity": 208.39,
+    "releaseDate": "3 October, 2018",
+    "runTime": 0,
+    "averageVote": 7.5,
+    "externalId": 332562,
+    "genres": [{
+        "name": "Drama",
+        "id": 4
+      },
+      {
+        "name": "Music",
+        "id": 15
+      },
+      {
+        "name": "Romance",
+        "id": 16
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 332562
+  },
+  {
+    "title": "Night School",
+    "overview": "Teddy Walker is a successful salesman whose life takes an unexpected turn when he accidentally blows up his place of employment. Forced to attend night school to get his GED, Teddy soon finds himself dealing with a group of misfit students, his former high school nemesis and a feisty teacher who doesn't think he's too bright.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//1NSMAaBPSbWv7sGmF8oLGMNb8Qm.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//7CWpvqVY5JWbEtkaenzqfJjVSal.jpg",
+    "originalLanguage": "en",
+    "popularity": 158.68,
+    "releaseDate": "27 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.3,
+    "externalId": 454293,
+    "genres": [{
+      "name": "Comedy",
+      "id": 7
+    }],
+    "keywords": null,
+    "trailers": null,
+    "id": 454293
+  },
+  {
+    "title": "The Predator",
+    "overview": "From the outer reaches of space to the small-town streets of suburbia, the hunt comes home. Now, the universe’s most lethal hunters are stronger, smarter and deadlier than ever before, having genetically upgraded themselves with DNA from other species. When a young boy accidentally triggers their return to Earth, only a ragtag crew of ex-soldiers and a disgruntled science teacher can prevent the end of the human race.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//wMq9kQXTeQCHUZOG4fAe5cAxyUA.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//f4E0ocYeToEuXvczZv6QArrMDJ.jpg",
+    "originalLanguage": "en",
+    "popularity": 122.121,
+    "releaseDate": "13 September, 2018",
+    "runTime": 0,
+    "averageVote": 5.3,
+    "externalId": 346910,
+    "genres": [{
+        "name": "Horror",
+        "id": 5
+      },
+      {
+        "name": "Science Fiction",
+        "id": 13
+      },
+      {
+        "name": "Action",
+        "id": 6
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 346910
+  },
+  {
+    "title": "Johnny English Strikes Again",
+    "overview": "Disaster strikes when a criminal mastermind reveals the identities of all active undercover agents in Britain. The secret service can now rely on only one man—Johnny English. Currently teaching at a minor prep school, Johnny springs back into action to find the mysterious hacker. For this mission to succeed, he’ll need all of his skills—what few he has—as the man with yesterday’s analogue methods faces off against tomorrow’s digital technology.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//tCBxnZwLiY1BOKw3tH6AxHZdqPh.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//yCOLqh5MOGyYdo58Ap0aWvKop9h.jpg",
+    "originalLanguage": "en",
+    "popularity": 106.293,
+    "releaseDate": "13 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.2,
+    "externalId": 463272,
+    "genres": [{
+        "name": "Adventure",
+        "id": 1
+      },
+      {
+        "name": "Family",
+        "id": 17
+      },
+      {
+        "name": "Action",
+        "id": 6
+      },
+      {
+        "name": "Comedy",
+        "id": 7
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 463272
+  },
+  {
+    "title": "First Man",
+    "overview": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//z6ZANhPCcPl1HsKGjY5iZALf65V.jpg",
+    "originalLanguage": "en",
+    "popularity": 104.658,
+    "releaseDate": "11 October, 2018",
+    "runTime": 0,
+    "averageVote": 7.2,
+    "externalId": 369972,
+    "genres": [{
+        "name": "History",
+        "id": 8
+      },
+      {
+        "name": "Drama",
+        "id": 4
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 369972
+  },
+  {
+    "title": "Smallfoot",
+    "overview": "A bright young yeti finds something he thought didn't exist—a human. News of this “smallfoot” throws the simple yeti community into an uproar over what else might be out there in the big world beyond their snowy village.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//4nKoB6wMVXfsYgRZK5lHZ5VMQ6J.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//7t88SoT3Dd8DhGnQuVoSbMNUl3W.jpg",
+    "originalLanguage": "en",
+    "popularity": 67.66,
+    "releaseDate": "20 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.5,
+    "externalId": 446894,
+    "genres": [{
+        "name": "Comedy",
+        "id": 7
+      },
+      {
+        "name": "Animation",
+        "id": 3
+      },
+      {
+        "name": "Family",
+        "id": 17
+      },
+      {
+        "name": "Adventure",
+        "id": 1
+      },
+      {
+        "name": "Fantasy",
+        "id": 2
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 446894
+  },
+  {
+    "title": "Air Strike",
+    "overview": "An American pilot is sent to a Chinese province to teach a crew of would-be pilots how to fly war planes against the Japanese during World War II.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//psGdCVhmJ2foPv9SBrzMQHfpY0p.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//8Rn4RNhZW88X5LlxTD7ldv8Q7QL.jpg",
+    "originalLanguage": "en",
+    "popularity": 59.716,
+    "releaseDate": "26 October, 2018",
+    "runTime": 0,
+    "averageVote": 6,
+    "externalId": 345934,
+    "genres": [{
+        "name": "Drama",
+        "id": 4
+      },
+      {
+        "name": "War",
+        "id": 18
+      },
+      {
+        "name": "Action",
+        "id": 6
+      },
+      {
+        "name": "Adventure",
+        "id": 1
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 345934
+  },
+  {
+    "title": "Goosebumps 2: Haunted Halloween",
+    "overview": "Two boys face an onslaught from witches, monsters, ghouls and a talking dummy after they discover a mysterious book by author R.\u202fL. Stine.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//8bcpki9GfXdXj9esFpPtlate8v0.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//9xYg9ScjGaO2HrLfOfYZirTrB3o.jpg",
+    "originalLanguage": "en",
+    "popularity": 55.72,
+    "releaseDate": "11 October, 2018",
+    "runTime": 0,
+    "averageVote": 5.8,
+    "externalId": 442062,
+    "genres": [{
+        "name": "Adventure",
+        "id": 1
+      },
+      {
+        "name": "Comedy",
+        "id": 7
+      },
+      {
+        "name": "Fantasy",
+        "id": 2
+      },
+      {
+        "name": "Horror",
+        "id": 5
+      },
+      {
+        "name": "Family",
+        "id": 17
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 442062
+  },
+  {
+    "title": "Mandy",
+    "overview": "The Shadow Mountains, 1983. Red and Mandy lead a loving and peaceful existence; but when their pine-scented haven is savagely destroyed, Red is catapulted into a phantasmagoric journey filled with bloody vengeance and laced with fire.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//m0yf7J7HsKeK6E81SMRcX8vx6mH.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//tNa19CK0CQZl5rxZ35QRdKAT2s0.jpg",
+    "originalLanguage": "en",
+    "popularity": 55.629,
+    "releaseDate": "13 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.4,
+    "externalId": 460885,
+    "genres": [{
+        "name": "Action",
+        "id": 6
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Horror",
+        "id": 5
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 460885
+  },
+  {
+    "title": "Bad Times at the El Royale",
+    "overview": "Seven strangers, each with a secret to bury, meet at Lake Tahoe's El Royale, a rundown hotel with a dark past in 1969. Over the course of one fateful night, everyone will have a last shot at redemption.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//iNtFgXqXPRMkm1QO8CHn5sHfUgE.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//gb3TVVZNNxVGNfS1NxGaiWZfwnW.jpg",
+    "originalLanguage": "en",
+    "popularity": 53.956,
+    "releaseDate": "4 October, 2018",
+    "runTime": 0,
+    "averageVote": 6.5,
+    "externalId": 446021,
+    "genres": [{
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Crime",
+        "id": 11
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 446021
+  },
+  {
+    "title": "The House with a Clock in Its Walls",
+    "overview": "Ten-year-old Lewis goes to live with his uncle in a creaky old house that contains a mysterious ticktock noise. When Lewis accidentally awakens the dead, the town's sleepy facade magically springs to life with a secret world of witches and warlocks.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//qM66Hv4ByAxnilr0jaqCA9uOD4Y.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//tQvvRReWhrXnj28s4AIp2PblByg.jpg",
+    "originalLanguage": "en",
+    "popularity": 40.125,
+    "releaseDate": "15 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.3,
+    "externalId": 463821,
+    "genres": [{
+        "name": "Horror",
+        "id": 5
+      },
+      {
+        "name": "Fantasy",
+        "id": 2
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Family",
+        "id": 17
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 463821
+  },
+  {
+    "title": "Searching",
+    "overview": "After his 16-year-old daughter goes missing, a desperate father breaks into her laptop to look for clues to find her. A thriller that unfolds entirely on computer screens.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//pk9R56ZFlofbBzfwBnHlDyg5DMs.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//3CCfgSvtvN3HwVs5hbcC1NhOAzw.jpg",
+    "originalLanguage": "en",
+    "popularity": 36.663,
+    "releaseDate": "24 August, 2018",
+    "runTime": 0,
+    "averageVote": 7.7,
+    "externalId": 489999,
+    "genres": [{
+        "name": "Drama",
+        "id": 4
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 489999
+  },
+  {
+    "title": "White Boy Rick",
+    "overview": "The story of teenager, Richard Wershe Jr., who became an undercover informant for the police during the 1980s and was ultimately arrested for drug-trafficking and sentenced to life in prison.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//376lzYd3vE04qBA5Js93UAKrnvj.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//4Y0eLVkUwThX9pt1uqVoWoCtvcl.jpg",
+    "originalLanguage": "en",
+    "popularity": 33.973,
+    "releaseDate": "14 September, 2018",
+    "runTime": 0,
+    "averageVote": 5.7,
+    "externalId": 438808,
+    "genres": [{
+        "name": "Drama",
+        "id": 4
+      },
+      {
+        "name": "Crime",
+        "id": 11
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 438808
+  },
+  {
+    "title": "A Simple Favor",
+    "overview": "Mommy vlogger Stephanie joins her best friend Emily’s husband, Sean, to investigate her sudden disappearance from their small town.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//xXGNyEG2v48q0bVR4AH4Vca2yvy.jpg",
+    "originalLanguage": "en",
+    "popularity": 33.142,
+    "releaseDate": "13 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.5,
+    "externalId": 484247,
+    "genres": [{
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Crime",
+        "id": 11
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 484247
+  },
+  {
+    "title": "London Fields",
+    "overview": "Clairvoyant femme fatale Nicola Six has been living with a dark premonition of her impending death by murder. She begins a tangled love affair with three uniquely different men: one of whom she knows will be her murderer... The film is based on a dystopian Martin Amis novel.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//Ap6Vqfw2VYHpLnijxCDJq0L8Uuw.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//aMIYAwIQhFiDNN2ZwbF5CgC76Ap.jpg",
+    "originalLanguage": "en",
+    "popularity": 28.354,
+    "releaseDate": "20 September, 2018",
+    "runTime": 0,
+    "averageVote": 6.3,
+    "externalId": 220882,
+    "genres": [{
+        "name": "Crime",
+        "id": 11
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      },
+      {
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Drama",
+        "id": 4
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 220882
+  },
+  {
+    "title": "Don't Go",
+    "overview": "Devastated by his daughter's death in a terrible accident, Ben becomes convinced that he can bring her back through a recurring dream. But is it just a dream? Or is Ben losing his mind?",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//K6OGjRF5s12HnZBY2ksvB4itWw.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//u828R2kMoNcXBVPYRiuMyEbgRy0.jpg",
+    "originalLanguage": "en",
+    "popularity": 27.892,
+    "releaseDate": "26 October, 2018",
+    "runTime": 0,
+    "averageVote": 0,
+    "externalId": 542202,
+    "genres": [{
+      "name": "Mystery",
+      "id": 14
+    }],
+    "keywords": null,
+    "trailers": null,
+    "id": 542202
+  },
+  {
+    "title": "I Think We're Alone Now",
+    "overview": "After the human race has been wiped out, Del lives in an empty town, content in his solitude and the utopia he has methodically created for himself, until he meets young Grace, who wants to stay with him.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//9sNsmC8FKgr4hTfnGCS49WY20k4.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//6SBWKM0lRWvadzluf1zIj7bYkZU.jpg",
+    "originalLanguage": "en",
+    "popularity": 19.498,
+    "releaseDate": "14 September, 2018",
+    "runTime": 0,
+    "averageVote": 6,
+    "externalId": 451877,
+    "genres": [{
+        "name": "Science Fiction",
+        "id": 13
+      },
+      {
+        "name": "Drama",
+        "id": 4
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 451877
+  },
+  {
+    "title": "Hold the Dark",
+    "overview": "In the grim Alaskan winter, a naturalist hunts for wolves blamed for killing a local boy, but he soon finds himself swept into a chilling mystery.",
+    "tagline": null,
+    "budget": 0,
+    "revenue": 0,
+    "homepage": null,
+    "imdbId": null,
+    "posterUrl": "http://image.tmdb.org/t/p/w1280//1etEySwZQnBJpzgplgadPi5y4PL.jpg",
+    "backdropUrl": "http://image.tmdb.org/t/p/original//k4IAtXpwuqo46Bh6HxcPA16Bqsj.jpg",
+    "originalLanguage": "en",
+    "popularity": 18.188,
+    "releaseDate": "22 September, 2018",
+    "runTime": 0,
+    "averageVote": 5.5,
+    "externalId": 395841,
+    "genres": [{
+        "name": "Thriller",
+        "id": 10
+      },
+      {
+        "name": "Mystery",
+        "id": 14
+      },
+      {
+        "name": "Adventure",
+        "id": 1
+      },
+      {
+        "name": "Drama",
+        "id": 4
+      }
+    ],
+    "keywords": null,
+    "trailers": null,
+    "id": 395841
+  }
+]

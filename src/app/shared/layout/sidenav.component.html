@@ -1,0 +1,43 @@
+
+<nav class="sidenav" id="sidebar">
+      <!--<div class="homeTitle"><i class="fas fa-home"></i>Home</div>-->
+      <ul class="left_menu" >
+            <li *ngIf="authService?.isAdmin">
+                  <p>ADMIN <!--<label for="admin" class="li_arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></label>--></p>
+                  <input type="checkbox" id="admin">
+                  <ul class="sub_admin">
+                        <li (click)="navigateToAdmin('users')"><i class="fa fa-users" aria-hidden="true"></i> Manage Users </li>
+                        <li (click)="navigateToAdmin('companies')"><i class="fa fa-industry"></i> Manage Companies </li>
+                        <li (click)="navigateToAdmin('config')"><i class="fa fa-gear"></i> Manage Configuration </li>
+                        <!--<li><i class="fas fa-thumbs-up"></i> Liked Videos <span class = "counts">32</span></li>-->
+                  </ul>
+            </li>
+            <li *ngIf="authService?.isLoggedIn()">
+                  <p>LIBRARY <!--<label for="library" class="li_arrow"><i class="li_arrow fa fa-chevron-down" aria-hidden="true"></i></label>--></p>
+                  <input type="checkbox" id="library">
+                  <ul class="sub_library">
+                        <li (click)="navigateToLibrary('RecentlyAdded')"><i class="fa fa-calendar"></i> Recently Added <span class="counts">{{ libraryTypeCounts['Recently Added'] }}</span></li>
+                        <li (click)="navigateToLibrary('Favorite')"><i class="fa fa-heart" aria-hidden="true"></i> Favorites <span class="counts">{{ libraryTypeCounts['Favorites'] }}</span></li>
+                        <li (click)="navigateToLibrary('WatchLater')"><i class="far fa-clock"></i> Watch Later <span class="counts">{{ libraryTypeCounts['Watch Later'] }}</span></li>
+                        <li (click)="navigateToLibrary('RecentlyWatched')"><i class="fas fa-redo"></i> Recently Watched <span class="counts">{{ libraryTypeCounts['Recently Watched'] }}</span></li>
+                        <!--<li><i class="fas fa-thumbs-up"></i> Liked Videos <span class = "counts">32</span></li>-->
+                  </ul>
+            </li>
+            <li>
+                  <p>TAGS <!--<label for="tags" class="li_arrow"><i class="li_arrow fa fa-chevron-down" aria-hidden="true"></i></label>--></p>
+                  <input type="checkbox" id="tags">
+                  <ul class="menu_tags sub_tags">
+                        <li *ngFor="let item of tagKeys" appSearch searchType='LeftNavigationTagSearch'
+                        (searchTriggered)='triggerSearch($event)' columnName='TagValue' operationType='Equal'>
+                        <p>{{ item }}</p><span class="counts">{{ tagCounts[item] }}</span> </li>
+                  </ul>
+            </li>
+      </ul>
+
+      <div class="footer">
+            <img src="assets/images/facebook_icon.png" alt="">
+            <img src="assets/images/linkedin_icon.png" alt="">
+            
+      </div>
+
+</nav>

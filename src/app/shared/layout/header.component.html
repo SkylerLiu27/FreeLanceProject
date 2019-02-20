@@ -1,0 +1,114 @@
+<div class="topbar" *ngIf="(authService?.isGuest() || authService?.isLoggedIn())" >
+    <div class="container-fluid">
+      
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 order-lg-1">
+                <div class="example-sidenav-content d-flex">
+                    <button class="hamburger_button" (click)="onClickMe()" style="margin-right: 40px;">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a href="#" style="text-decoration: none;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12 col-12 order-lg-2 order-md-3 order-sm-3 order-3"></div>
+            <!--
+            <div class="col-lg-3 col-md-5 col-sm-5 order-lg-2 order-md-2 order-sm-2 order-1">
+              <button id="brand" type="button"></button>
+            </div>
+            -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 order-lg-4">
+                <div class="right-options">
+                    <ul>
+                        <!--
+                        <li class="toggle_search"><i class="fas fa-search"></i></li>
+                        <li><i class="fab fa-youtube"></i><p class="video_add">+</p></li>
+                        <li><i class="fas fa-bell"></i><p class="notify_count">33</p></li>
+                        -->
+                        <li class="profile_name hidden-xs"> {{authService?.currentUserFullName == null ? 'Guest' : authService?.currentUserFullName}}  </li>
+                        <li class="profile_options dropdown dropbottom">
+                        <!--<img alt="" class="rounded-circle dropdown-toggle" data-toggle="dropdown" src="assets/images/default_user_icon.png">-->
+                        <i class="fas fa-cog" data-toggle="dropdown"></i>
+                        <div class="dropdown-menu profile_settings">
+                            <a *ngIf='this.authService?.isGuest()' class="dropdown-item" href="#" (click)='signin()'>Sign In</a>
+                            <a *ngIf='this.authService?.isLoggedIn()' class="dropdown-item" href="#" (click)='signout()'>Sign Out</a>
+                            <!--<a *ngIf='this.authService?.isLoggedIn()' class="dropdown-item" href="#" (click)='signout()'><i class="fas fa-power-off"></i> Sign Out</a>-->
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-12 order-lg-3 huh">
+                <div class="search_wrapper">
+                    <div class="topnav search_main_field">
+                        <div appSearch searchType='GlobalSearch' columnName='term' operationType='Like' (searchTriggered)='triggerSearch($event)' class="searchFieldWrapper">
+                            <input id="searchField" style="font-size: 13pt;" placeholder="Search..." type="text">
+                            <button class="dropdown_btn" (click)="showDetails = !showDetails">
+                                <i class="arrow fa fa-caret-down" aria-hidden="true"></i>
+                            </button>
+                            <!--
+                            <div class="dropdown dropbottom" style="position: absolute; margin-top: 7px; right: 100px; float: left;">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="float: left; height: 30px; width: 30px; padding: 0px; font-size: 24px; line-height: 0px;"><i class="arrow fa fa-caret-down" aria-hidden="true"></i></button>
+                                <div class="dropdown-menu asf_wrapper" style="width: 100%; margin-top: 40px;">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </div>
+                            -->
+                            <button id="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class='backdrop' (click)='hideAdvancedSearch()' *ngIf="showDetails"></div>
+                        <div appSearch searchType='AdvancedSearch' selectedTags='{{selectedTags}}' columnName='' operationType='' (searchTriggered)='triggerSearch($event)' class="dropFilter" id="dropFilter" *ngIf="showDetails">
+                            <div class="filterContents">
+                                <div class="filterItem">
+                                    <label for="MyInput">Title </label>
+                                    <input id='searchTitleCtrl' placeholder="Search by title..." type="text">
+                                </div>
+                                <div class="filterItem">
+                                    <label for="MyInput">Description </label>
+                                    <input id='searchDescCtrl' placeholder="Description of the video" type="text">
+                                </div>
+                                <div class="filterItem">
+                                    <label for="MyInput">Tags </label>
+                                    <div class="select-tagging">
+                                        <ng-select [items]="tagKeys" [multiple]="true" [closeOnSelect]="true" bindLabel="name" (add)='addTag($event)' (remove)='removeTag($event)' [(ngModel)]="selectedTags" id='searchTagsCtrl' placeholder="Choose tags" type="text"> </ng-select>
+                                    </div>
+                                </div>
+                                <!-- 
+                                <div class="filterItem">
+                                    <label>Duration </label>
+                                    <div class="three_column">
+                                        <select id="" name="">
+                                            <option>Greater Than</option>
+                                            <option>Less Than</option>
+                                        </select>
+                                        <input placeholder="Duration" type="number">
+                                        <select aria-placeholder="MB" id="" name="">
+                                            <option >Hours</option>
+                                            <option value="mb" ng-reflect-value="mb">Minutes</option>
+                                            <option value="gb" ng-reflect-value="gb">Seconds</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                -->
+                                <div class="filterItem">
+                                    <label for="MyInput">Date </label>
+                                    <div class="two_column">
+                                        <input id='searchFromDateCtrl' placeholder="From" type="date">
+                                        <input id='searchToDateCtrl' placeholder="To" type="date">
+                                    </div>
+                                </div>
+                                <div class="searchOptionsWrapper">
+                                    <button class="clearallButton" type="submit">Clear All</button>
+                                    <button class="advancedSearchButton" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

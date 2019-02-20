@@ -1,0 +1,24 @@
+<div class="videoCard" (click)='navToVieoPage()' drag-scroll-item>
+    <div class="videoImage" >
+        <img [src]="v.thumbNailJSON.medium" alt="{{v.title}}" class="img-fluid" />
+        <div class="cover"><i id="videoButton" class="fa fa-play-circle"></i></div>
+    </div>
+    <div class="title">
+        <h5 class="fl">{{v.title}}</h5>
+        <span class="fr dropdown dropright btnctrl">
+            <i *ngIf="v.isFavorite" class="fa fa-heart btnlabel" aria-hidden="true" title="favorite">&nbsp;</i>
+            <i *ngIf="v.isWatchLater" class="far fa-clock btnlabel" title="Watch Later" title="watchLater">&nbsp;</i>
+            <button class="dropdown-toggle moreButton" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="dropdown-menu more_options" aria-labelledby="drowndownMenuButton">
+                <button *ngIf="!v.isFavorite" type="button" class="dropdown-item" (click)='saveToLibrary(v.videoId, "favorite")'>Add to favorites</button>
+                <button *ngIf="v.isFavorite" type="button" class="dropdown-item"  (click)='removeFromLibrary(v.videoId, "favorite")'>Remove from favorites</button>
+                <button *ngIf="!v.isWatchLater" type="button" class="dropdown-item" (click)='saveToLibrary(v.videoId, "watchLater")'>Add to Watch later</button>
+                <button *ngIf="v.isWatchLater" type="button" class="dropdown-item"  (click)='removeFromLibrary(v.videoId, "watchLater")'>Remove from Watch later</button>
+            </div>
+        </span>
+    </div>
+    <p class="fl desc">{{v.description}}</p>
+    <div class="info">
+        <p class="fr">Publish Date: {{v.publishedDateTime}}</p>
+    </div>
+</div>

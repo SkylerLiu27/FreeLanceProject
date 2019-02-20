@@ -1,0 +1,34 @@
+.lmw {
+  width: 300px;
+  margin-left: 0px;
+  transition: .4s;
+}
+.lmw_after {
+  float: left;
+  overflow: auto;
+  width: 300px;
+  margin-left: -300px;
+  background-color: #173b6b;
+  transition: .4s;
+}
+.pcw{
+  margin-left: 300px !important;
+  transition: .4s;
+}
+.pcw_after{
+  margin-left: 0px !important;
+  transition: .4s;
+}
+.sidebar {
+    position: fixed;
+    float: left;
+    overflow: auto;
+    width: 300px;
+    background-color: #173b6b;
+    height: 90vh;
+    padding-top: 20px;
+}
+.page_content_wrapper{
+    padding: 0px;
+    margin-left: 300px;
+}

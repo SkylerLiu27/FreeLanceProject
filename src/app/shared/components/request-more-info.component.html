@@ -1,0 +1,120 @@
+<div class="modal fade adduser-modal" id="requestInfo">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form #ngInfo='ngForm' (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" #firstName='ngModel' [(ngModel)]="requestMoreInfo.person.firstName"
+                                class="form-control" name="first_name" placeholder="First Name" [disabled]='loggedInUser' required>
+                        </div>
+                        <div [hidden]="firstName.valid || !firstName.touched" class="alert alert-danger">
+                            First Name is required
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" #lastName='ngModel' [(ngModel)]="requestMoreInfo.person.lastName"  class="form-control"
+                                name="last_name" placeholder="Last Name" [disabled]='loggedInUser' required>
+                        </div>
+                        <div [hidden]="lastName.valid || !lastName.touched" class="alert alert-danger">
+                            Last Name is required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="email" #email='ngModel' [(ngModel)]="requestMoreInfo.person.email" class="form-control"
+                                name="email" placeholder="Email" [disabled]='loggedInUser' required>
+                        </div>
+                        <div [hidden]="email.valid || !email.touched" class="alert alert-danger">
+                            Email is required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="companyName" #companyName='ngModel' [(ngModel)]="requestMoreInfo.person.companyName" class="form-control"
+                                name="companyName" placeholder="Company Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea rows="10" #message='ngModel' [(ngModel)]="requestMoreInfo.message" class="form-control"
+                                name="message" placeholder="Write your query here..." required></textarea>
+                        </div>
+                        <div [hidden]="message.valid || !message.touched" class="alert alert-danger">
+                            Message is required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="button" class="btn btn-primary form-control" data-dismiss="modal" value="Cancel"
+                                #closeBtn>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary form-control" name="submit_request" value="Submit">
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+    <div class="page_content" style="padding-top: 100px;">
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" id="first_name" placeholder="First Name">
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+              <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+          </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+          <div class="form-group">
+              <textarea rows="10" class="form-control" id="message" placeholder="Write your query here..."></textarea>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary form-control" id="add_company" value="Submit">
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-3"></div>
+  </div>
+</div>
+
+-->

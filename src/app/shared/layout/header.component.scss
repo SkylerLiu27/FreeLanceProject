@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "century-gothic-regular";
+    src: url("/fonts/century-gothic/GOTHIC.TTF");
+}
+@font-face {
+    font-family: "century-gothic-bold";
+    src: url("/fonts/century-gothic/GOTHICB0.TTF");
+}
+
+.topbar {
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+    font-weight: 100;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px #333333;
+}
+#expand {
+    margin-left: -50px;
+    width: 40px;
+    height: 30px;
+    margin-top: 1%;
+    border: white;
+    border-radius: 15px;
+    color: #86A4B3;
+}
+#expand:focus {
+    outline: none;
+}
+#expand:hover {
+    color: #86A4B3;
+}
+
+.hamburger_button{
+    cursor: pointer;
+    background-color: white;
+    border: 0px;
+    font-size: 24px;
+    margin-top: 2px;
+    color: #173b6b;
+}
+.hamburger_button:focus{
+    outline: none;
+}
+#brand {
+    background-color: white;
+    border: none;
+  }
+
+.right-options {
+    width: 100%;
+    float: right;
+  }
+  .right-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .right-options ul li {
+    display: inline;
+    margin-left: 10px;
+  }
+  .right-options ul li .notify_count, .right-options ul li .video_add {
+    position: absolute;
+    top: 15px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    padding: 0 2px;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #122f56;
+    color: #122f56;
+  }
+  .right-options ul li .video_add {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 26px;
+    margin-left: 29px;
+    background-color: #173b6b;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 2px;
+    line-height: 10px;
+  }
+  .right-options ul li img {
+    width: 45px;
+  }
+  .right-options ul li i {
+    margin-top: 7px;
+    margin-right: 10px;
+    font-size: 26px;
+    color: #173b6b;
+  }
+.profile_name{margin-top: 4px; font-size: 20px;}
+.profile_options{
+    cursor: pointer;
+    position: relative;
+}
+.profile_options ul{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: -150px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #333333;
+    z-index: 999;
+}
+.profile_options ul li{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 400;
+    padding: 15px 15px;
+    margin: 5px 0;
+}
+.profile_options ul li:hover{
+    background-color: #dddddd;
+}
+.profile_options ul li i{
+    float: left;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #333333;
+}
+.profile_settings{width: 150px;}
+.profile_settings .dropdown-item{
+    padding: 8px 15px;
+    border-bottom: dotted 1px #999999;
+}
+.profile_settings .dropdown-item:last-child{border: 0px;}
+.profile_settings .dropdown-item i{
+    margin: 0 !important;
+    margin-right: 10px !important;
+}
+.profile_settings:before {
+    content: "▲";
+    position: absolute;
+    font-size: 20px;
+    line-height: 0px;
+    color: #ffffff;
+    margin-top: -8px;
+    margin-left: 105px;
+    text-shadow: 0 -2px 2px #555555;
+  }
+
+.search_main_field{
+    overflow: auto;
+    border: 1px solid #173b6b;
+}
+.search_wrapper {
+    float: left;
+    width: 100%;
+    
+}
+#searchField {
+    font-size:24px; 
+}
+
+#searchBtn{
+    float: right;
+    width: 12%;
+    height: 44px;
+    padding-bottom: 5px;
+    background-color: #173b6b;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 17px;
+}
+#searchBtn i{
+    font-size: 24px;
+    margin-top: 8px;
+    color: #ffffff;
+}
+#searchBtn:focus {
+    outline: none;
+}
+.searchFieldWrapper{
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+
+}
+#searchField {
+    float: left;
+    width: 85%;
+    height: 44px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: white;
+    padding-right: 50px;
+    color: grey;
+    padding-left: 20px;
+    border: 0px;
+}
+#searchField:focus, .dropdown_btn:focus{
+    outline: none;
+}
+.right-options i{
+    cursor: pointer;
+    color: #173b6b;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.dropdown_btn {
+  cursor: pointer;
+  position: absolute;
+  background-color: #ffffff;
+  margin-left: -20px;
+  margin-top: 6px;
+  height: 30px;
+  background-color: none;
+  border: 0px;
+}
+
+.dropdown_btn .arrow {
+  font-size: 24px;
+  color: #7f7f7f;
+}
+.dropFilter {
+    width: 95.4%;
+    position: absolute;
+    margin-top: 45px;
+    padding: 25px 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px #555555;
+    z-index: 9999;
+}
+
+.show {
+    display: inline-block;
+}.filterContents {
+    margin-left: 20px;
+    margin-right: 20px;
+}  
+.filterItem {
+    float: left;
+    width: 100%;
+    padding: 5px 5px;
+} 
+.filterItem label {
+    width: 20%;
+    float: left;
+    padding-top: 10px;
+} 
+.filterItem input, .filterItem select, .filterItem .select-tagging {
+    float: right;
+    font-size: 15px;
+    height: 50px;
+    width: 75%;
+    padding: 0 5px 0 15px;
+    background-color: #f5f5f5;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+}
+.filterItem .select-tagging {
+    padding: 0px;
+}
+.filterItem input:focus, .filterItem select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #555555;
+}
+.filterItem .two_column, .filterItem .three_column {
+    width: 75%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}  
+.filterItem .two_column input, .filterItem .two_column select {width: 49%;}  
+.filterItem .three_column input, .filterItem .three_column select {width: 32%;}
+.searchOptionsWrapper {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+}  
+.searchOptionsWrapper button {
+    padding: 10px 25px;
+    margin: 0 10px;
+}  
+.advancedSearchButton {
+    background-color: #173b6b;
+    color: #ffffff;
+    border: 0px;
+}  
+.clearallButton {
+    border: solid 1px #173b6b;
+    background-color: #f5f5f5;
+    color: #173b6b;
+}
+  
+
+
+.toggle_search {
+    cursor: pointer;
+    display: none !important;
+  }
+
+  .backdrop{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color: transparent;
+  }

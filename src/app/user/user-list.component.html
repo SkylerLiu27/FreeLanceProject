@@ -1,0 +1,194 @@
+<div class="secondary-header">
+    <div class="row">
+        <div class="col-sm-8">
+            <ul class="breadcrumb">
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li>User List</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page_content">
+    <div class="filter_wrapper">
+        <div class="row">
+            <div class="col-sm-2">
+                <input type="text" placeholder="Search by name" [(ngModel)]="searchName" class="form-control mr-2">
+            </div>
+            <div class="col-sm-2">
+                <input type="text" placeholder="Search by email " [(ngModel)]="searchEmail" class="form-control mr-2">
+            </div>
+            <div class="col-sm-2">
+                <input type="text" placeholder="Search by company " [(ngModel)]="searchCompany" class="form-control mr-2">
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary addNewBtn" data-toggle="modal" data-target="#addUser" (click)='addUser(userForm)'><i class="fas fa-plus"></i> &nbsp; Add User</button>
+            </div>
+        </div>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <th>S.No </th>
+            <th>First Name </th>
+            <th>Last Name </th>
+            <th>User Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+           <th>Company</th>
+            <th colspan="3" width="10%">Actions</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let user of users | personSearch: searchName:searchEmail:searchCompany  | paginate: { itemsPerPage: 20, currentPage: page } ; let i = index">
+                <td><strong>{{i + 1}}</strong></td>
+                <td>{{user.person.firstName}}</td>
+                <td>{{user.person.lastName}}</td>
+                <td>{{user.userName}}</td>
+                <td>{{user.person.phone}}</td>
+                <td>{{user.person.email}}</td>
+                <td>{{user.person.companyName}}</td>
+                <td class="tac"><a (click)="editUser(user)" data-toggle="modal" data-target="#addUser"><i class="fa fa-edit"></i></a></td>
+                <td class="tac"><a href="#"><i class="fa fa-lock"></i></a></td>
+                <td class="tac"><a href="#"><i class="fa fa-trash"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>
+    <!--
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        <ngb-pagination #pagination [collectionSize]="totalCount" [pageSize]="itemsPerPage" [(page)]="curPage" (pageChange)="loadPage($event)" aria-label="Default pagination"></ngb-pagination>
+    -->
+</div>
+
+
+<!-- The Modal -->
+<div class="modal fade adduser-modal" id="addUser">
+    <div class="modal-dialog modal-dialog-centered" #actionUserMoal>
+        <div class="modal-content">
+
+            <!-- Modal body -->
+            <form class="modal-body" (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input required maxlength="15" [(ngModel)]="actionUser.firstName" name="firstName" id="firstName" type="text" class="form-control" placeholder="First Name" #firstName="ngModel">
+                            <!-- <small  class="form-text text-muted">maximum 15 characters</small> -->
+                        </div>
+                        <div *ngIf="firstName.invalid && ( firstName.touched)" class="alert alert-danger">
+                            <div *ngIf="firstName.errors.required">First name is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input required [(ngModel)]="actionUser.lastName" name="lastName" type="text" class="form-control" id="last_name" placeholder="Last Name" #lastName="ngModel">
+                            <!-- <small  class="form-text text-muted">maximum 15 characters</small> -->
+                        </div>
+                        <div *ngIf="lastName.invalid && ( lastName.touched)" class="alert alert-danger">
+                            <div *ngIf="lastName.errors.required"> Last name is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input required [(ngModel)]="actionUser.userName" name="userName" type="text" class="form-control" id="user_name" placeholder="User Name" #userName="ngModel">
+                            <!-- <small  class="form-text text-muted">maximum 15 characters</small> -->
+                        </div>
+                        <div *ngIf="userName.invalid && ( userName.touched)" class="alert alert-danger">
+                            <div *ngIf="userName.errors.required">User name is required.</div>
+                        </div>
+                        <div *ngIf="asyncError.userName" class="alert alert-danger">{{asyncError.userName}}</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input [(ngModel)]="actionUser.phoneArea" name="phoneArea" type="text" class="form-control" id="user_phone_area" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="form-group">
+                            <input required [(ngModel)]="actionUser.phoneNumber" name="phoneNumber" type="text" class="form-control" id="phone" placeholder="Phone Number" pattern="^\d{10}" #phoneNumber="ngModel">
+                        </div>
+                        <div *ngIf="phoneNumber.invalid && (phoneNumber.touched)" class="alert alert-danger">
+                            <div *ngIf="phoneNumber.errors.required">Phone number is required.</div>
+                            <div *ngIf="phoneNumber.errors.pattern">Phone number is invalid.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type='email' aria-describedby="emailHelp" required [(ngModel)]="actionUser.email" name="email" type="email" email class="form-control" id="email" placeholder="Email" #email="ngModel">
+                        </div>
+                        <div *ngIf="email.invalid && ( email.touched)" class="alert alert-danger">
+                            <div *ngIf="email.errors.required">Email is required.</div>
+                            <div *ngIf="email.errors.email">Email is invalid.</div>
+                        </div>
+                        <div *ngIf="asyncError.email" class="alert alert-danger">{{asyncError.email}}</div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" [(ngModel)]="actionUser.company" name="company" id='company' [ngbTypeahead]="search" class="form-control" name="company" placeholder="Company">
+                        </div>
+                    </div>
+                    <ng-template #rt let-r="result" let-t="term">
+                        <div class="font-weight">
+                            {{ r.companyName}}
+                        </div>
+                    </ng-template>
+                </div> 
+                -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <select #company="ngModel" required [compareWith]="compareFn" [(ngModel)]="actionUser.company" name="company" class="form-control" id="company">
+                                <option [ngValue]="selectPlaceHolder" disabled>Choose a company</option>
+                                <option *ngFor="let c of companies" [ngValue]="c">{{ c.companyName }}</option>
+                            </select>
+                        </div>
+                        <div *ngIf=" (company.touched) && actionUser.company.companyId==''" class="alert alert-danger">
+                            <div>Company is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">Roles:</div>
+                    <div class="col-sm-6">
+                        <div class="form-group" >
+                            <div class="form-check form-check-inline">
+                                <input [(ngModel)]="actionUser.role.user.isUser" name="roleUser" class="form-check-input" type="checkbox" id="inlineCheckbox1" #roles="ngModel" >
+                                <label class="form-check-label" for="inlineCheckbox1">User</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input [(ngModel)]="actionUser.role.admin.isAdmin" name="roleAdmin" class="form-check-input" type="checkbox" id="inlineCheckbox2">
+                                <label class="form-check-label" for="inlineCheckbox2">Admin</label>
+                            </div>
+                        </div>
+                        <div *ngIf="(roles.dirty || roles.touched)&&!customRoleValidator(actionUser.role)" class="alert alert-danger">
+                            <div>Roles is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary form-control" [value]="buttonSwitch()">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default form-control" data-dismiss="modal" value="Cancel" #closeBtn >
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+<div id="landingPage">
+    <div class="d-flex">
+        <div class="col-12 col-md-5 accessPageLeft hidden-sm-down d-none d-sm-none d-md-block">
+            <img width="250" src="https://image.shutterstock.com/image-vector/brain-logo-silhouette-design-vector-450w-662421157.jpg">
+        </div>
+        <div class="col-12 col-md-7 accessPageRight">
+      <!--
+      <div class="gentisForm">
+        <div class="heading">
+          <h3>Video portfolios to identify the best possible talent for our clients.</h3>
+        </div>
+        <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+        <div class="loginForm">
+          <input type="text" class="formField form-control" id="txtUserName" [(ngModel)]='userLogin.username'
+            placeholder="USER NAME" required>
+          <input type="text" class="formField form-control" id="txtPassword" [(ngModel)]='userLogin.password' type="password"
+            placeholder="PASSWORD" required>
+          <div class="formActions">
+            <input type="button" (click)="login()" class="btn btn-primary form-control formBtn activeBtn loginSubmitBtn"
+              id="btnLogin" value="SIGN IN">
+          </div>
+          <div class="formOptions">
+            <a (click)="continueAsGuest()" href="" class="fr"> <b> <u>Continue as Guest </u> </b> </a>
+          </div>
+        </div>
+      </div>
+      -->
+
+        <div class="access_form">
+            <h3>Sign In</h3>
+            <h5>Video portfolios to identify the best possible talent for our clients.</h5>
+            <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+            <input type="text" class="formField form-control" id="txtUserName" [(ngModel)]='userLogin.username' placeholder="USER NAME" required>
+            <input type="text" class="formField form-control" id="txtPassword" [(ngModel)]='userLogin.password' type="password" placeholder="PASSWORD" required>
+            <div class="formActions">
+                <input type="button" (click)="login()" class="btn btn-primary form-control formBtn activeBtn loginSubmitBtn" id="btnLogin" value="SIGN IN">
+                <a (click)="continueAsGuest()" href="" class="guest_link fr"> <b> <u>Continue as Guest </u> </b> </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <input type="checkbox"> &nbsp; <a href="#" class="remembermeBtn">Remember Me</a> -->
+<!--
+<div class="access_form">
+  <img width="220" src="https://static1.squarespace.com/static/55b523b7e4b08415a07a1687/t/5892366c29687fda177b549c/1532370592644/?format=1500w">
+  <h3>Sign In</h3>
+  <h5>Video portfolios to identify the best possible talent for our clients.</h5>
+  <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+  <input type="text" class="formField form-control" id="txtUserName" [(ngModel)]='userLogin.username'
+            placeholder="USER NAME" required>
+  <input type="text" class="formField form-control" id="txtPassword" [(ngModel)]='userLogin.password' type="password"
+            placeholder="PASSWORD" required>
+  <div class="formActions">
+    <input type="button" (click)="login()" class="btn btn-primary form-control formBtn activeBtn loginSubmitBtn"
+              id="btnLogin" value="SIGN IN">
+    <a (click)="continueAsGuest()" href="" class="guest_link fr"> <b> <u>Continue as Guest </u> </b> </a>
+  </div>
+</div>
+-->
+<!--
+<div>
+  <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" class="form-control" id="txtUserName" [(ngModel)]='userLogin.username' placeholder="User Name"
+                required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" class="form-control" id="txtPassword" [(ngModel)]='userLogin.password' type="password" placeholder="Password"
+                required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="button" (click)="login()" class="btn btn-primary form-control" id="btnLogin" value=Submit>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <a (click)="continueAsGuest()" href="" > Continue as Guest </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+-->

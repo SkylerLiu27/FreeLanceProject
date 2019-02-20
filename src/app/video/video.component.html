@@ -1,0 +1,103 @@
+<div class="secondary-header">
+    <div class="row">
+        <div class="col-sm-8">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li>{{ video?.title | titlecase}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page_content">
+    <div class="row">
+        <div class="col-md-12 col-lg-8">
+            <div *ngIf='isSuccess' class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> {{this.message}}
+            </div>      
+            <div *ngIf='isError' class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Danger!</strong> {{this.message}}
+            </div>
+            <div class="mainVideo" *ngIf='video'>
+                <iframe [src]="video.videoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+            <div class="videoDetails">
+  
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 id="videoTitle">{{ video.title | titlecase }}
+                            <span class="fr dropdown dropleft btnctrl">
+                                <i *ngIf="video.favoriteFlag" class="fa fa-heart btnlabel" aria-hidden="true" title="favorite">&nbsp;</i>
+                                <i *ngIf="video.watchLaterFlag" class="far fa-clock btnlabel" title="Watch Later" title="watchLater">&nbsp;</i>
+                                <button class="dropdown-toggle moreButton" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button>
+                                <div class="dropdown-menu more_options" aria-labelledby="drowndownMenuButton">
+                                    <button type="button" class="dropdown-item" (click)='saveToLibrary(video.videoId, "favorite")' *ngIf="!video.favoriteFlag">Add to favorites</button>
+                                    <button type="button" class="dropdown-item" (click)='removeFromLibrary(video.videoId, "favorite")' *ngIf="video.favoriteFlag">Remove from favorites</button>
+                                    <button type="button" class="dropdown-item" (click)='saveToLibrary(video.videoId, "watchLater")' *ngIf="!video.watchLaterFlag">Add to Watch later</button>
+                                    <button type="button" class="dropdown-item" (click)='removeFromLibrary(video.videoId, "watchLater")' *ngIf="video.watchLaterFlag">Remove from Watch later</button>
+                                </div>
+                            </span>
+                        </h2>
+                        <div class="bottomBar">
+                            <div id="videoUploadTime"><span id="videoViews">3 days ago</span></div>
+                        </div>
+                        <p class="v_content">{{video.description}}</p>
+                        <hr />
+                        <ul id="tags"> 
+                            <ng-template ngFor let-tag [ngForOf]='video.tags'>
+                                <span><li>{{tag.tagValues[0]}}</li></span>
+                            </ng-template>
+                        </ul>
+                        <hr />
+                        <button class="btn btn-primary" style="border-radius: 0px;" data-toggle="modal" data-target="#requestInfo"> Request More Information</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="show_more_btn">Show More</button> -->
+        </div>
+
+        <div class="col-md-12 col-lg-8">
+            <div class="">
+            
+                <h4>Similar Videos</h4>
+                <hr />
+                <div class="related_videos">
+                    <button id="leftArrow" class="Arrow" (click)="moveLeftrcw(rcw, i)"><i class="fas fa-angle-left"></i></button>
+                    <drag-scroll #rcw scrollbar-hidden="true" style="height: 220px;">
+                        <div class="videoCard" *ngFor="let u of relatedVideos" (click)='navToVieoPage(u.videoId)' drag-scroll-item>
+                            <div class="v_thumb">
+                                <img [src]="u.thumbNailJSON.medium" alt="{{u.title}}" class="img-fluid">
+                                <div _ngcontent-c5="" class="cover"><i _ngcontent-c5="" class="fa fa-play-circle" id="videoButton"></i></div>
+                            </div>
+                            <div class="v_info">
+                                <div class="upNextVideoInfo">
+                                    <h5>{{ u.title | titlecase }}</h5>
+                                    <p class="desc">{{u.description}}</p>
+                                </div>
+                            </div>
+                            <div *ngIf='this.authService?.isLoggedIn()' class="v_options align-self-start">
+                                <span class="fr dropdown dropleft">
+                                    <button class="dropdown-toggle moreButton" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                                    <div class="dropdown-menu rv_options" aria-labelledby="drowndownMenuButton">
+                                        <button type="button" class="dropdown-item" (click)='saveToLibrary(v.videoId, "WatchLater")' href="#">Watch later</button>
+                                        <button type="button" class="dropdown-item" (click)='saveToLibrary(v.videoId, "Favorite")' href="#">Add to favorites</button>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </drag-scroll>
+                    <button id="rightArrow" class="Arrow" (click)="moveRightrcw(rcw, i)"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- The Modal -->
+
+
+<!-- Modal body -->
+<app-request-more-info [isSuccess]='this.isSuccess' [isError]='this.isError' [message]='this.message' [video] = 'this.video' ></app-request-more-info>
